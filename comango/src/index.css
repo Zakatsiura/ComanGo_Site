@@ -1,0 +1,15 @@
+body {
+  margin: 0;
+  font-family: 'Arial';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  font-size: 16px;
+  --dark: #393f50;
+  --blue: #435892;
+  --lightblue: #7684a8;
+  --light: #f2eee7;
+  --brown: #bcaa8a;
+}

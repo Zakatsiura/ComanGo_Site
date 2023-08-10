@@ -1,0 +1,11 @@
+.wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--brown);
+    padding: 1rem 0;
+}
+
+.logo {
+    max-width: 25rem;
+}
