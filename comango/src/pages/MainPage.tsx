@@ -1,9 +1,10 @@
-import { TimeLine, MainTop } from '../components';
+import { TimeLine, MainTop, CardTop } from '../components';
 
 const MainPage = () => {
     return (
         <>
             <MainTop />
+            <CardTop/>
             <TimeLine />
         </>
     );
