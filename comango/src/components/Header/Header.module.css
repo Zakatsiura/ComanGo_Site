@@ -9,3 +9,9 @@
 .logo {
     max-width: 25rem;
 }
+
+@media (max-width: 576px) {
+    .logo {
+            max-width: 12rem;
+        }
+}

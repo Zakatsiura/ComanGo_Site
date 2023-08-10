@@ -12,7 +12,7 @@
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
     gap: 1rem;
     justify-items: center;
     align-items: center;
@@ -51,7 +51,6 @@
     border-radius: 10px;
     color: var(--light);
     background: linear-gradient(var(--blue), var(--lightblue));
-    border: 2px solid var(--secondarygreen);
     border: 2px solid var(--dark);
 }
 
@@ -67,7 +66,7 @@
     .container {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
         gap: 1rem;
         justify-items: center;
         align-items: center;
@@ -77,10 +76,15 @@
 @media (max-width: 576px) {
     .card {
         height: 400px;
-        width: 30ch;
+        max-width: 25ch;
         cursor: pointer;
         transform: translate(0%, 0%);
-        margin: 0;
-        background-size: cover;
+        gap: 1rem;
+    }
+
+    .front,
+    .back {
+        padding: 1rem;
+        font-size: 1rem;
     }
 }
