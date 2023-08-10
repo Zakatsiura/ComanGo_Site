@@ -1,10 +1,11 @@
+import { Menu } from '../Menu/Menu';
 import styles from './Footer.module.css';
 
 const Footer = () => {
     return (
         <>
             <div className={styles.wrapper}>
-                <h2>Footer</h2>
+                <Menu/>
             </div>
         </>
     );

@@ -1,0 +1,13 @@
+.wrapper {
+    width: 50vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.menuItem {
+    text-decoration: none;
+    color: var(--light);
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
