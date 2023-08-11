@@ -5,7 +5,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    clip-path: polygon(0 15%, 50% 0%, 100% 15%, 100% 100%, 0% 100%);
+    border-top: 2px solid var(--blue);
 }
 
 .container__bg {
@@ -32,7 +32,8 @@
 }
 
 .title__main {
-    color: var(--light)
+    color: var(--light);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 
 .list {

@@ -7,7 +7,7 @@ body {
 
 :root {
   font-size: 16px;
-  background-color: rgb(240, 233, 218);
+  background-color: rgba(0, 0, 0, 0.5);
   --dark: #393f50;
   --blue: #435892;
   --lightblue: #7684a8;

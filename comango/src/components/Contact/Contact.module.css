@@ -1,9 +1,25 @@
-.wrapper {
-    color: var(--dark)
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url('../../assets/images/bg_3.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top: 2px solid var(--blue);
+}
+
+.container__bg {
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .title {
     text-align: center;
     text-transform: uppercase;
+    color: var(--light);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
     font-size: 2rem;
+    margin: 0;
+    padding: 2rem;
 }
