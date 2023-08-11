@@ -5,8 +5,8 @@ const MainPage = () => {
         <>
             <MainTop />
             <CardTop />
-            <Portfolio />
             <TimeLine />
+            <Portfolio />
             <Contact />
         </>
     );
