@@ -3,13 +3,14 @@
     font-size: 1.2rem;
     letter-spacing: 1px;
     font-weight: 300;
-    padding: 1rem;
-    position: relative
+    /* padding: 1rem; */
 }
 
 .container {
     max-width: 1200px;
+    position: relative;
     margin: 0 auto;
+    padding: 0;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(1, 1fr);
@@ -24,7 +25,6 @@
     cursor: pointer;
     transform: translate(0%, 0%);
     margin: 1rem;
-    background-size: cover;
 }
 
 .card:hover .front {
@@ -44,12 +44,14 @@
     height: 100%;
     overflow: hidden;
     position: absolute;
-    padding: 1rem;
+    top:0;
+    left: -1rem;
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
     transition: transform 0.5s ease;
     border-radius: 10px;
     color: var(--light);
+    padding: 0 1rem;
     background: linear-gradient(var(--blue), var(--lightblue));
     border: 2px solid var(--dark);
 }
@@ -67,9 +69,6 @@
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(2, 1fr);
-        gap: 1rem;
-        justify-items: center;
-        align-items: center;
     }
 }
 
@@ -77,14 +76,10 @@
     .card {
         height: 400px;
         max-width: 25ch;
-        cursor: pointer;
-        transform: translate(0%, 0%);
-        gap: 1rem;
     }
 
     .front,
     .back {
-        padding: 1rem;
         font-size: 1rem;
     }
 }

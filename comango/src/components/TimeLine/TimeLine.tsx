@@ -69,20 +69,34 @@ const TimeLine = () => {
                   },
               ];
     return (
-        <div className={styles.wrapper}>
-            <h1 className={styles.title}>
-                {language === 'en' ? 'Milestones' : 'Ключові моменти'}
-            </h1>
-            <ul className={styles.list}>
-                {data.map((item, index) => (
-                    <li className={styles.list__item} key={index}>
-                        <div className={styles.date}>{item.year}</div>
-                        <div className={styles.title}>{item.title}</div>
-                        <div className={styles.descr}>{item.text}</div>
-                    </li>
-                ))}
-            </ul>
-        </div>
+        <>
+            <div className={styles.container}>
+                <div className={styles.container__bg}>
+                    <div className={styles.wrapper}>
+                        <h1 className={styles.title__main}>
+                            {language === 'en'
+                                ? 'Milestones'
+                                : 'Ключові моменти'}
+                        </h1>
+                        <ul className={styles.list}>
+                            {data.map((item, index) => (
+                                <li className={styles.list__item} key={index}>
+                                    <div className={styles.date}>
+                                        {item.year}
+                                    </div>
+                                    <div className={styles.title}>
+                                        {item.title}
+                                    </div>
+                                    <div className={styles.descr}>
+                                        {item.text}
+                                    </div>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </>
     );
 };
 

@@ -1,17 +1,39 @@
 .wrapper {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     background-color: var(--brown);
-    padding: 1rem 0;
+    padding: 1rem 2rem;
 }
 
 .logo {
     max-width: 25rem;
 }
 
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 3rem
+}
+
+.menuItem {
+    font-size: 1.5rem;
+    color: var(--light);
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+@media (max-width: 998px) {
+    .menu {
+        display: none;
+    }
+}
+
 @media (max-width: 576px) {
     .logo {
-            max-width: 12rem;
-        }
+        max-width: 12rem;
+    }
 }

@@ -1,11 +1,5 @@
 import styles from './Menu.module.css';
-
-const menuItems = [
-    { item: 'About', link: '#' },
-    { item: 'Stack', link: '#' },
-    { item: 'Portfolio', link: '#' },
-    { item: 'Contact', link: '#' },
-];
+import { menuItems } from './MenuItems';
 
 const Menu = () => {
     return (

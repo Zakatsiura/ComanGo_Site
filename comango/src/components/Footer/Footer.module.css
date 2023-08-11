@@ -1,7 +1,21 @@
 .wrapper {
     display: flex;
+    flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
     background-color: var(--dark);
     padding: 1rem 0;
+}
+
+.menuItem {
+    color: var(--light);
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+@media (max-width: 576px) {
+    .wrapper {
+        flex-direction: column;
+        row-gap: 1rem;
+    }
 }
