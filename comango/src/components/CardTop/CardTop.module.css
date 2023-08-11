@@ -1,9 +1,13 @@
 .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 0 auto;
     font-size: 1.2rem;
     letter-spacing: 1px;
     font-weight: 300;
-    /* padding: 1rem; */
+    min-height: 70dvh;
+    border-top: 2px solid var(--blue);
 }
 
 .container {
@@ -14,7 +18,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(1, 1fr);
-    gap: 1rem;
+    gap: 5rem;
     justify-items: center;
     align-items: center;
 }
@@ -44,7 +48,7 @@
     height: 100%;
     overflow: hidden;
     position: absolute;
-    top:0;
+    top: 0;
     left: -1rem;
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
@@ -69,6 +73,7 @@
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(2, 1fr);
+        gap: 1rem
     }
 }
 
