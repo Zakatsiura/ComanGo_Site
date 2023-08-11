@@ -1,4 +1,4 @@
-import { TimeLine, MainTop, CardTop, Portfolio } from '../components';
+import { TimeLine, MainTop, CardTop, Portfolio, Contact } from '../components';
 
 const MainPage = () => {
     return (
@@ -7,6 +7,7 @@ const MainPage = () => {
             <CardTop />
             <Portfolio />
             <TimeLine />
+            <Contact />
         </>
     );
 };
