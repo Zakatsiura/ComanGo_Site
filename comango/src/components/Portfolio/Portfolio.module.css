@@ -47,9 +47,12 @@
     transform: scale(1.03);
 }
 
+.link>a {
+    text-decoration: none;
+}
+
 .link__desc {
     text-align: center;
-    text-decoration: none;
     color: var(--light);
 }
 
