@@ -4,10 +4,12 @@ import { LanguageSwitcher } from '../LanguageSwitcher/LanguageSwitcher';
 import { menuItems } from '../Menu/MenuItems';
 
 
+
+
 const Header = () => {
     return (
         <>
-            <div className={styles.wrapper}>
+            <div id='about' className={styles.wrapper}>
                 <img className={styles.logo} src={logo} alt="Logo" />
                 <div className={styles.menu}>
                     {menuItems.map((menuItem, index) => (
