@@ -1,13 +1,8 @@
-.fleet {
-    padding: 0;
-    margin: 0 auto;
-    color: var(--light);
-}
-
 .wrapper {
     max-width: 1400px;
     margin: 0 auto;
-    font-size: 1.25rem;
+    color: var(--light);
+    font-size: 1.3rem;
     letter-spacing: 1px;
     padding: 1rem;
 }

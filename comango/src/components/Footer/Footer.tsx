@@ -3,7 +3,6 @@ import { useContext } from 'react';
 import { LanguageContext } from '../../context/languageContext';
 import styles from './Footer.module.css';
 import logo from '../../assets/images/Logo.svg';
-import { LanguageSwitcher } from '../LanguageSwitcher/LanguageSwitcher';
 
 const Footer = () => {
     const languageContext = useContext(LanguageContext);
