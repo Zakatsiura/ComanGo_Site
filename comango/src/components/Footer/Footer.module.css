@@ -5,6 +5,7 @@
     align-items: center;
     background-color: var(--dark);
     padding: 1rem 0;
+    min-height: 80px;
 }
 
 .menuItem {
@@ -13,9 +14,16 @@
     text-transform: uppercase;
 }
 
+.logo {
+    width: 25%;
+}
+
 @media (max-width: 576px) {
     .wrapper {
         flex-direction: column;
         row-gap: 1rem;
     }
+        .logo {
+            width: 70%;
+        }
 }
