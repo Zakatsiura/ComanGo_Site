@@ -59,14 +59,21 @@ const Stack = () => {
 
     return (
         <>
-            <div className={styles.wrapper}>
+            <div className={styles.wrapper} id="stack">
                 <h2 className={styles.title}>
                     {locales[language].stack__title}
                 </h2>
+                <p className={styles.text__main}>
+                    {locales[language].stack__text}
+                </p>
                 <div className={styles.card__wrapper}>
                     {tech.map((techItem, index) => (
                         <div key={index} className={styles.card}>
-                            <img src={techItem.img} alt={techItem.title} className={styles.img} />
+                            <img
+                                src={techItem.img}
+                                alt={techItem.title}
+                                className={styles.img}
+                            />
                             <p className={styles.text}>{techItem.title}</p>
                         </div>
                     ))}

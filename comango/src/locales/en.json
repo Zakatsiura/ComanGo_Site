@@ -5,5 +5,6 @@
     "cardtop__text2": "The primary goal of us is to assist clients in leveraging technology to enhance efficiency, security, and competitiveness in today's digital landscape.",
     "portfolio__title": "Portfolio",
     "portfolio__text": "Examples of our completed work that we can showcase with links to them:",
-    "stack__title": "Our tech stack"
+    "stack__title": "Our main tech stack",
+    "stack__text": "Our stack includes a variety of tools and tools that work together to ensure the creation of functional and efficient web applications. Front-end technologies such as HTML, CSS, and JavaScript are usually found at the first level. They allow you to create a convenient and beautiful interface for users. Next comes the backend level, where the JS and Node.js programming languages are used. This level is responsible for data processing, interaction with databases and business logic of the application. An important element of the stack are databases such as MySQL, PostgreSQL, MongoDB, which provide storage and access to information. The stack also includes React and Next,js frameworks. Using this complex of technologies, we create powerful and scalable web applications that meet the needs of modern users."
 }

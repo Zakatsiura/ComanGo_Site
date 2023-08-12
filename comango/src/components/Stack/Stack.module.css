@@ -30,6 +30,16 @@
     height: 80px;
 }
 
+.text__main {
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+    max-width: 1400px;
+    padding: 1rem;
+    margin: 0 auto;
+    text-indent: 1rem;
+    margin-bottom: 2rem;
+}
+
 .text {
     font-size: 1.3rem;
     text-align: center;
