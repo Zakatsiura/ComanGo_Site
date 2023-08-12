@@ -24,7 +24,7 @@ const Portfolio = () => {
                 <p className={styles.text}>
                     {locales[language].portfolio__text}
                 </p>
-                <div className={styles.jobs__wrappes}>
+                <div className={styles.jobs__wrapper}>
                     <div className={styles.link}>
                         <a href="https://duuuje.com/" target="blank">
                             <img

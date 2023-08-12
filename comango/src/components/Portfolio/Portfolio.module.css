@@ -12,7 +12,7 @@
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 
-.jobs__wrappes {
+.jobs__wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -53,7 +53,7 @@
 }
 
 @media (max-width: 900px) {
-    .jobs__wrappes {
+    .jobs__wrapper {
         flex-direction: column;
     }
 }

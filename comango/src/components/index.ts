@@ -5,3 +5,4 @@ export * from './CardTop/CardTop';
 export * from './Portfolio/Portfolio';
 export * from './Contact/Contact';
 export * from './Video/Video';
+export * from './Stack/Stack';

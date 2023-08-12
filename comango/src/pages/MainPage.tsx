@@ -3,6 +3,7 @@ import {
     Portfolio,
     Contact,
     Video,
+    Stack,
 } from '../components';
 
 const MainPage = () => {
@@ -10,6 +11,7 @@ const MainPage = () => {
         <>
             <Video/>
             <CardTop />
+            <Stack/>
             <Portfolio />
             <Contact />
         </>
