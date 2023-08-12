@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--brown);
+    background-color: var(--dark);
     padding: 1rem 2rem;
 }
 
@@ -22,7 +22,7 @@
 
 .menuItem {
     font-size: 1.5rem;
-    color: var(--light);
+    color: var(--brown);
     text-decoration: none;
     text-transform: uppercase;
 }
