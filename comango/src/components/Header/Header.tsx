@@ -3,13 +3,10 @@ import logo from '../../assets/images/Logo.svg';
 import { LanguageSwitcher } from '../LanguageSwitcher/LanguageSwitcher';
 import { menuItems } from '../Menu/MenuItems';
 
-
-
-
 const Header = () => {
     return (
         <>
-            <div id='about' className={styles.wrapper}>
+            <div className={styles.wrapper}>
                 <img className={styles.logo} src={logo} alt="Logo" />
                 <div className={styles.menu}>
                     {menuItems.map((menuItem, index) => (

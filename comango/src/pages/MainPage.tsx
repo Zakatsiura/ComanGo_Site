@@ -1,6 +1,4 @@
 import {
-    TimeLine,
-    MainTop,
     CardTop,
     Portfolio,
     Contact,
@@ -11,9 +9,7 @@ const MainPage = () => {
     return (
         <>
             <Video/>
-            {/* <MainTop /> */}
             <CardTop />
-            <TimeLine />
             <Portfolio />
             <Contact />
         </>

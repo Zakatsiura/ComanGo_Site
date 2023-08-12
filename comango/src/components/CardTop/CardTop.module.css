@@ -1,90 +1,78 @@
-.wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.fleet {
+    padding: 0;
     margin: 0 auto;
-    font-size: 1.2rem;
-    letter-spacing: 1px;
-    font-weight: 300;
-    min-height: 70dvh;
-    border-top: 2px solid var(--blue);
+    color: var(--light);
 }
 
-.container {
-    max-width: 1200px;
-    position: relative;
+.wrapper {
+    max-width: 1400px;
     margin: 0 auto;
-    padding: 0;
+    font-size: 1.25rem;
+    letter-spacing: 1px;
+    padding: 1rem;
+}
+
+.title {
+    text-align: center;
+    padding: 2rem 0;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main__row {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(1, 1fr);
-    gap: 5rem;
-    justify-items: center;
-    align-items: center;
+    gap: 20px;
 }
 
 .card {
-    height: 450px;
-    width: 35ch;
-    cursor: pointer;
-    transform: translate(0%, 0%);
-    margin: 1rem;
-}
-
-.card:hover .front {
-    transform: perspective(600px) rotateY(-180deg);
-}
-
-.card:hover .back {
-    transform: perspective(600px) rotateY(0);
-}
-
-.front,
-.back {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    max-width: 100%;
     width: 100%;
-    height: 100%;
-    overflow: hidden;
-    position: absolute;
-    top: 0;
-    left: -1rem;
-    backface-visibility: hidden;
-    -webkit-backface-visibility: hidden;
-    transition: transform 0.5s ease;
-    border-radius: 10px;
     color: var(--light);
-    padding: 0 1rem;
-    background: linear-gradient(var(--blue), var(--lightblue));
-    border: 2px solid var(--dark);
+    background-color: var(--blue);
+    margin: 2rem auto;
+    border-radius: 0.5rem;
 }
 
-.front {
-    transform: perspective(600px) rotateY(0);
+.card__img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 300px;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
 }
 
-.back {
-    transform: perspective(600px) rotateY(180deg);
+.card__body,
+.card__title {
+    padding: 1.5rem;
 }
 
-@media (max-width: 1000px) {
-    .container {
-        display: grid;
+
+.card__content {
+    min-height: 300px;
+    height: max-content;
+    width: 100%;
+}
+
+.text {
+    padding: 1rem 0;
+    text-indent: 1rem;
+}
+
+@media (max-width: 900px) {
+    .main__row {
         grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        gap: 1rem
     }
-}
 
-@media (max-width: 576px) {
     .card {
-        height: 400px;
-        max-width: 25ch;
-    }
-
-    .front,
-    .back {
-        font-size: 1rem;
+        max-width: 95%;
     }
 }
