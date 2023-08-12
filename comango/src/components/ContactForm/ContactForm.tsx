@@ -12,6 +12,7 @@ const ContactForm = () => {
     const formRef = useRef() as MutableRefObject<HTMLFormElement>;
 
     const [isSubmitDisabled, setIsSubmitDisabled] = useState(true);
+    const [isFormSubmitted, setIsFormSubmitted] = useState(false);
 
     const handleInputChange = () => {
         const formInputs = Array.from(
@@ -20,7 +21,7 @@ const ContactForm = () => {
             )
         );
         const isAnyFieldEmpty = formInputs.some((input) => !input.value.trim());
-        setIsSubmitDisabled(isAnyFieldEmpty);
+        setIsSubmitDisabled(isAnyFieldEmpty || isFormSubmitted);
     };
 
     const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
@@ -32,6 +33,8 @@ const ContactForm = () => {
             .then(
                 (result) => {
                     alert(`Success ${result.text}`);
+                    setIsFormSubmitted(true);
+                    setIsSubmitDisabled(true);
                 },
                 (error) => {
                     alert(`Fail ${error.text}`);
