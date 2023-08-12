@@ -30,7 +30,7 @@ video {
 }
 
 .title {
-    max-width: 70%;
+    max-width: 80%;
     margin: 0 auto;
     text-align: center;
     color: var(--light);
