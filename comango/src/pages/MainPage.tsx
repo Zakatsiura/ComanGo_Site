@@ -11,7 +11,7 @@ const MainPage = () => {
     return (
         <>
             <Video/>
-            <MainTop />
+            {/* <MainTop /> */}
             <CardTop />
             <TimeLine />
             <Portfolio />

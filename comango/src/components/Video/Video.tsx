@@ -3,7 +3,7 @@ import React, { useContext, useEffect, useRef } from 'react';
 import { LanguageContext } from '../../context/languageContext';
 import { locales } from '../../locales/locales';
 import styles from './Video.module.css';
-import main from '../../assets/video/';
+import main from '../../assets/video/laptop.mp4';
 
 const Video: React.FC = () => {
     const videoRef = useRef<HTMLVideoElement>(null);
@@ -43,8 +43,8 @@ const Video: React.FC = () => {
                     <source src={main} type="video/mp4" />
                 </video>
                 <div className={styles.content}>
-                    <h1 className={styles.content}>
-                        {/* {locales[language].slogan} */}
+                    <h1 className={styles.title}>
+                        {locales[language].comango__title}
                     </h1>
                 </div>
             </section>
