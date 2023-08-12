@@ -4,13 +4,9 @@ import emailjs from '@emailjs/browser';
 import styles from './ContactForm.module.css';
 import ContactInput from './ContactInput';
 
-const templateID = process.env.REACT_APP_TEMPLATE_ID;
-const serviceID = process.env.REACT_APP_SERVICE_ID;
-const publicKey = process.env.REACT_APP_PUBLIC_KEY;
-
-if (!templateID || !serviceID || !publicKey) {
-    throw new Error('One or more environment variables are not defined.');
-}
+const templateID = process.env.REACT_APP_TEMPLATE_ID || '';
+const serviceID = process.env.REACT_APP_SERVICE_ID || '';
+const publicKey = process.env.REACT_APP_PUBLIC_KEY || '';
 
 const ContactForm = () => {
     const formRef = useRef() as MutableRefObject<HTMLFormElement>;
