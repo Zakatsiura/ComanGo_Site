@@ -4,9 +4,9 @@ import emailjs from '@emailjs/browser';
 import styles from './ContactForm.module.css';
 import ContactInput from './ContactInput';
 
-const templateID = process.env.REACT_APP_TEMPLATE_ID || '';
-const serviceID = process.env.REACT_APP_SERVICE_ID || '';
-const publicKey = process.env.REACT_APP_PUBLIC_KEY || '';
+const templateID: string = process.env.REACT_APP_TEMPLATE_ID;
+const serviceID: string = process.env.REACT_APP_SERVICE_ID;
+const publicKey: string = process.env.REACT_APP_PUBLIC_KEY;
 
 console.log(templateID, serviceID, publicKey);
 
