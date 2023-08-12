@@ -6,3 +6,4 @@ export * from './MainTop/MainTop';
 export * from './CardTop/CardTop';
 export * from './Portfolio/Portfolio';
 export * from './Contact/Contact';
+export * from './Video/Video';
