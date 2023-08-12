@@ -3,7 +3,7 @@ import React, { useContext, useEffect, useRef } from 'react';
 import { LanguageContext } from '../../context/languageContext';
 import { locales } from '../../locales/locales';
 import styles from './Video.module.css';
-// import main from '../../assets/video/laptop.mp4';
+import main from '../../assets/video/';
 
 const Video: React.FC = () => {
     const videoRef = useRef<HTMLVideoElement>(null);
@@ -40,7 +40,7 @@ const Video: React.FC = () => {
                     className={styles.video}
                     ref={videoRef}
                 >
-                    {/* <source src={main} type="video/mp4" /> */}
+                    <source src={main} type="video/mp4" />
                 </video>
                 <div className={styles.content}>
                     <h1 className={styles.content}>
