@@ -6,7 +6,7 @@ const Footer = () => {
     return (
         <>
             <div className={styles.wrapper}>
-                <img className={styles.logo} src={logo} />
+                <img className={styles.logo} src={logo} alt='logo' />
                 {menuItems.map((menuItem, index) => (
                     <a
                         href={menuItem.link}
