@@ -8,6 +8,8 @@ const templateID = process.env.REACT_APP_TEMPLATE_ID || '';
 const serviceID = process.env.REACT_APP_SERVICE_ID || '';
 const publicKey = process.env.REACT_APP_PUBLIC_KEY || '';
 
+console.log(templateID, serviceID, publicKey);
+
 const ContactForm = () => {
     const formRef = useRef() as MutableRefObject<HTMLFormElement>;
 
