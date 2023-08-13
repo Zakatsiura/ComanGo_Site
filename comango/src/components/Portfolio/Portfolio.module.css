@@ -31,10 +31,13 @@
     width: 90%;
     margin: 0 auto;
     border-radius: 1rem;
+    border: 2px solid var(--blue);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 
 .link__img:hover {
     transform: scale(1.03);
+    border: 2px solid var(--light);
 }
 
 .link>a {

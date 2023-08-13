@@ -1,5 +1,6 @@
 .container {
     width: 100%;
+    min-height: 60vh;
     background-image: url('../../assets/images/bg_3.jpg');
     background-position: center;
     background-repeat: no-repeat;
@@ -8,6 +9,7 @@
 
 .container__bg {
     width: 100%;
+    min-height: 60vh;
     background-color: rgba(0, 0, 0, 0.5);
 }
 
