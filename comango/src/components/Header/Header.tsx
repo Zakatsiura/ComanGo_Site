@@ -5,6 +5,7 @@ import styles from './Header.module.css';
 import logo from '../../assets/images/Logo.svg';
 import { LanguageSwitcher } from '../LanguageSwitcher/LanguageSwitcher';
 import { menuItemsEn, menuItemsUa } from '../../constants/menuItems';
+import { BurgerMenu } from '../BurgerMenu/BurgerMenu';
 
 const Header = () => {
     const languageContext = useContext(LanguageContext);
@@ -19,7 +20,7 @@ const Header = () => {
 
     return (
         <>
-            <div className={styles.wrapper} id='main'>
+            <div className={styles.wrapper} id="main">
                 <a href="#main">
                     <img className={styles.logo} src={logo} alt="Logo" />
                 </a>
@@ -35,6 +36,9 @@ const Header = () => {
                     ))}
                 </div>
                 <LanguageSwitcher />
+                <div className={styles.burger}>
+                    <BurgerMenu />
+                </div>
             </div>
         </>
     );
