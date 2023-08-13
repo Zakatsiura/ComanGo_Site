@@ -38,15 +38,17 @@ const BurgerMenu = () => {
                 <span className={`${styles.menu__item_span}`}></span>
                 {isActive && (
                     <div className={styles.menuItems}>
-                        {menuItems.map((menuItem, index) => (
-                            <a
-                                href={menuItem.link}
-                                key={index}
-                                className={styles.menuItem_link}
-                            >
-                                {menuItem.item}
-                            </a>
-                        ))}
+                        <div className={styles.menuItemsContainer}>
+                            {menuItems.map((menuItem, index) => (
+                                <a
+                                    href={menuItem.link}
+                                    key={index}
+                                    className={styles.menuItem_link}
+                                >
+                                    {menuItem.item}
+                                </a>
+                            ))}
+                        </div>
                     </div>
                 )}
             </div>
