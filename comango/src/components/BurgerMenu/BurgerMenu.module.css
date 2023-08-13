@@ -46,11 +46,11 @@
     position: fixed;
     top: 0;
     left: 0;
-    bottom: 100dvh;
+    bottom: 100%;
     right: 100%;
     background-color: var(--lightblue);
     width: 100vw;
-    height: 100vh;
+    height: 100dvh;
     overflow: hidden;
 }
 
