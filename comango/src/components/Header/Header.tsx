@@ -4,6 +4,7 @@ import { LanguageContext } from '../../context/languageContext';
 import styles from './Header.module.css';
 import logo from '../../assets/images/Logo.svg';
 import { LanguageSwitcher } from '../LanguageSwitcher/LanguageSwitcher';
+import { menuItemsEn, menuItemsUa } from '../../constants/menuItems';
 
 const Header = () => {
     const languageContext = useContext(LanguageContext);
@@ -14,20 +15,7 @@ const Header = () => {
 
     const { language } = languageContext;
 
-    const menuItems =
-        language === 'en'
-            ? [
-                  { item: 'About', link: '#about' },
-                  { item: 'Stack', link: '#stack' },
-                  { item: 'Portfolio', link: '#portfolio' },
-                  { item: 'Contact', link: '#contact' },
-              ]
-            : [
-                  { item: 'Про нас', link: '#about' },
-                  { item: 'Стек', link: '#stack' },
-                  { item: 'Портфоліо', link: '#portfolio' },
-                  { item: 'Контакти', link: '#contact' },
-              ];
+    const menuItems = language === 'en' ? menuItemsEn : menuItemsUa;
 
     return (
         <>

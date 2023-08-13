@@ -3,6 +3,7 @@ import { useContext } from 'react';
 import { LanguageContext } from '../../context/languageContext';
 import styles from './Footer.module.css';
 import logo from '../../assets/images/Logo.svg';
+import { menuItemsEn, menuItemsUa } from '../../constants/menuItems';
 
 const Footer = () => {
     const languageContext = useContext(LanguageContext);
@@ -12,21 +13,8 @@ const Footer = () => {
     }
 
     const { language } = languageContext;
-
-    const menuItems =
-        language === 'en'
-            ? [
-                  { item: 'About', link: '#about' },
-                  { item: 'Stack', link: '#stack' },
-                  { item: 'Portfolio', link: '#portfolio' },
-                  { item: 'Contact', link: '#contact' },
-              ]
-            : [
-                  { item: 'Про нас', link: '#about' },
-                  { item: 'Стек', link: '#stack' },
-                  { item: 'Портфоліо', link: '#portfolio' },
-                  { item: 'Контакти', link: '#contact' },
-              ];
+    
+    const menuItems = language === 'en' ? menuItemsEn : menuItemsUa;
 
     return (
         <>
