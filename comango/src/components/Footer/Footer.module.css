@@ -5,6 +5,7 @@
     align-items: center;
     background-color: var(--dark);
     padding: 1rem 0;
+    width: 100vw;
     min-height: 80px;
 }
 
@@ -14,8 +15,13 @@
     text-transform: uppercase;
 }
 
+
+.logo__wrapper {
+    max-width: 25%;
+}
+
 .logo {
-    width: 25%;
+    width: 100%;
 }
 
 @media (max-width: 576px) {
@@ -24,7 +30,7 @@
         row-gap: 1rem;
     }
 
-    .logo {
-        width: 70%;
+    .logo__wrapper {
+        min-width: 80dvw;
     }
 }

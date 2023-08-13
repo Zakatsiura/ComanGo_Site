@@ -19,8 +19,10 @@ const Header = () => {
 
     return (
         <>
-            <div className={styles.wrapper}>
-                <img className={styles.logo} src={logo} alt="Logo" />
+            <div className={styles.wrapper} id='main'>
+                <a href="#main">
+                    <img className={styles.logo} src={logo} alt="Logo" />
+                </a>
                 <div className={styles.menu}>
                     {menuItems.map((menuItem, index) => (
                         <a

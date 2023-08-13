@@ -13,13 +13,15 @@ const Footer = () => {
     }
 
     const { language } = languageContext;
-    
+
     const menuItems = language === 'en' ? menuItemsEn : menuItemsUa;
 
     return (
         <>
             <div className={styles.wrapper}>
-                <img className={styles.logo} src={logo} alt="logo" />
+                <a href="#main" className={styles.logo__wrapper}>
+                    <img className={styles.logo} src={logo} alt="logo" />
+                </a>
                 {menuItems.map((menuItem, index) => (
                     <a
                         href={menuItem.link}
