@@ -5,7 +5,7 @@
     align-items: center;
     background-color: var(--dark);
     padding: 1rem 0;
-    width: 100vw;
+    width: 100%;
     min-height: 80px;
 }
 
