@@ -16,12 +16,17 @@ const BurgerMenu = () => {
 
     const menuItems = language === 'en' ? menuItemsEn : menuItemsUa;
 
+    const toggleBodyScroll = (shouldScroll: boolean) => {
+        document.body.style.overflow = shouldScroll ? 'hidden' : 'auto';
+    };
+
     const toggleActive = () => {
         setIsActive((prevIsActive) => !prevIsActive);
+        toggleBodyScroll(!isActive);
     };
 
     return (
-        <div>
+        <>
             <div
                 className={`${styles.menu__item} ${
                     isActive ? styles.active : ''
@@ -45,7 +50,7 @@ const BurgerMenu = () => {
                     </div>
                 )}
             </div>
-        </div>
+        </>
     );
 };
 

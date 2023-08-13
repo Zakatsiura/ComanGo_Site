@@ -4,7 +4,6 @@
     position: relative;
     z-index: 5;
     cursor: pointer;
-    /* overflow: hidden; */
 }
 
 .menu__item_span {
@@ -48,6 +47,7 @@
     left: 0;
     bottom: 100%;
     right: 100%;
+    overflow: hidden;
     background-color: var(--lightblue);
     width: 100vw;
     height: 100dvh;
