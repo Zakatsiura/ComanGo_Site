@@ -1,5 +1,7 @@
-import React, { MutableRefObject, useRef, useState } from 'react';
+import React, { MutableRefObject, useRef, useState, useContext } from 'react';
 
+import { LanguageContext } from '../../context/languageContext';
+import { locales } from '../../locales/locales';
 import emailjs from '@emailjs/browser';
 import styles from './ContactForm.module.css';
 import ContactInput from './ContactInput';
@@ -9,6 +11,7 @@ const serviceID: string = process.env.REACT_APP_SERVICE_ID;
 const publicKey: string = process.env.REACT_APP_PUBLIC_KEY;
 
 const ContactForm = () => {
+    
     const formRef = useRef() as MutableRefObject<HTMLFormElement>;
 
     const [isSubmitDisabled, setIsSubmitDisabled] = useState(true);
@@ -43,6 +46,14 @@ const ContactForm = () => {
         formRef.current.reset();
     };
 
+    const languageContext = useContext(LanguageContext);
+
+    if (!languageContext) {
+        return null;
+    }
+
+    const { language } = languageContext;
+
     return (
         <form
             onSubmit={sendEmail}
@@ -51,27 +62,27 @@ const ContactForm = () => {
             onChange={handleInputChange}
         >
             <ContactInput
-                text="Full name"
-                placeholder="Enter your name"
+                text={locales[language].contact__name}
+                placeholder={locales[language].contact__pl_name}
                 type="text"
                 name="fullname"
             />
             <ContactInput
-                text="E-mail"
-                placeholder="Enter your e-mail"
+                text={locales[language].contact__email}
+                placeholder={locales[language].contact__pl_email}
                 type="email"
                 name="email"
             />
             <ContactInput
-                text="Phone number"
-                placeholder="Enter your phone number"
+                text={locales[language].contact__phone}
+                placeholder={locales[language].contact__pl_phone}
                 type="tel"
                 name="phone"
             />
             <textarea
                 rows={4}
                 cols={50}
-                placeholder="Type your message"
+                placeholder={locales[language].contact__message}
                 name="message"
                 style={{ resize: 'none' }}
             />
@@ -81,7 +92,7 @@ const ContactForm = () => {
                 type="submit"
                 disabled={isSubmitDisabled}
             >
-                Submit
+                {locales[language].contact__submit}
             </button>
         </form>
     );
