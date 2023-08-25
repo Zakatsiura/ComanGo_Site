@@ -2,7 +2,7 @@ import { useContext } from 'react';
 
 import { LanguageContext } from '../../context/languageContext';
 import styles from './Header.module.css';
-import logo from '../../assets/images/Logo.svg';
+import logo from '../../assets/images/logo.png';
 import { LanguageSwitcher } from '../LanguageSwitcher/LanguageSwitcher';
 import { menuItemsEn, menuItemsUa } from '../../constants/menuItems';
 import { BurgerMenu } from '../BurgerMenu/BurgerMenu';

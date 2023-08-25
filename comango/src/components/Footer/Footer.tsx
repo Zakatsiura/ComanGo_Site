@@ -2,7 +2,7 @@ import { useContext } from 'react';
 
 import { LanguageContext } from '../../context/languageContext';
 import styles from './Footer.module.css';
-import logo from '../../assets/images/Logo.svg';
+import logo from '../../assets/images/logo.png';
 import { menuItemsEn, menuItemsUa } from '../../constants/menuItems';
 
 const Footer = () => {
